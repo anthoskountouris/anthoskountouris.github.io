@@ -1,0 +1,290 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    background-color: #000000;
+    color: #F5F5F5;
+    flex-grow: 1;
+    /* padding-bottom: 30px; */
+}
+
+/* This changes the background color of the selected text */
+::selection {
+    background-color: blueviolet; /* This is an orange color */
+    color: #FFFFFF; /* This is white color for the text */
+}
+
+/* For compatibility with some browsers like Firefox */
+::-moz-selection {
+    background-color: blueviolet;
+    color: #FFFFFF;
+}
+
+.footer {
+    background-color: #5e5b5b;
+    /* #AC9B84 */
+    /* 33007F */
+    /* #33007F */
+    /* #440392 */
+    color: #F5F5F5;
+    text-align: center;
+    /* padding: 0.5px; */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+.navbar {
+    background-color:#F5F5F5;
+} 
+
+/* Change the color of navbar links */
+.navbar-nav .nav-link {
+    font-size: larger;
+    color: #000000; 
+}
+
+/* Change the color of active navbar link */
+.navbar-nav .nav-link.active {
+    color: #000000; 
+}
+
+
+/* Change the color of navbar links on hover */
+.navbar-nav .nav-link:hover {
+    color:blueviolet; 
+}
+
+/* Change the color of dropdown items */
+.dropdown-item {
+    color: #000000; 
+}
+
+.navbar-brand img {
+    height: 50px;  /* Make logo take full height of navbar */
+    width: auto;  /* Maintain aspect ratio */
+    padding-left: 30px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Change the background color of the navbar toggler button */
+/* .navbar-toggler {
+    background-color: #FF5733;
+} */
+
+
+.aboutme-container{
+    background-color: #F5F5F5;
+    color: #000000;
+    /* margin-bottom: 100px; */
+    margin: 100px auto;
+    padding: 10px 5px 30px; /* Added padding for better appearance */
+    border-radius: 15px;
+    max-width: 1100px;
+    /* width: 1000px; */
+    /* display: flex;
+    justify-content: center;  /* Center horizontally */
+    /* align-items: center;  */
+}
+
+.section-container{
+    margin-top: 100px;
+    /* max-width: 1200px;
+    padding: 20px; */
+}
+
+.skills-section{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+.skills-container {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+.section-title {
+    font-size: 24px;
+    font-weight:400;
+    margin: 30px;
+    text-align: center;
+}
+
+.skills-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #5e5b5b;
+    text-align: center;
+}
+
+.skl-container{
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+    margin-bottom: 2%;
+}
+
+
+/* Make sure that padding behaves as expected
+* {box-sizing:border-box} */
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  font-weight: 500;
+  color: white; /* White text color */
+}
+
+.python {width: 80%; background-color: #2C666E;} /* Blue */
+.java {width: 70%; background-color: #2C666E;} /* Brown */
+.html {width: 90%; background-color: #2C666E;} /* Orange */
+.css {width: 80%; background-color: #2C666E;} /* Purple */
+.js {width: 50%; background-color: #2C666E;} /* Yellow */
+.matlab {width: 60%; background-color: #2C666E;} /* Orange-Red */
+.r {width: 60%; background-color: #2C666E;} /* Blue */
+.flask {width: 75%; background-color: #36454F;} /* Teal */
+.django {width: 75%; background-color: #36454F;} /* Dark Green */
+.express {width: 50%; background-color: #36454F;} /* Green */
+.sql {width: 80%; background-color: #B8860B;} 
+.nosql {width: 60%; background-color: #B8860B;} 
+
+
+/* .custom-card .card-body {
+    padding: 15px; /* Adjust the padding as needed */
+    /* background-color: #F5F5F5; */
+  /* } */
+
+/* .custom-card .card-img-top {
+    width: 100%;  /* Make image fill the container */
+    /* height: 200px;  /* Set a fixed height */
+    /* object-fit: cover;  /* Cover the area without distorting aspect ratio */
+/* }  */
+
+/* .custom-card {
+    display: flex;  /* Enable flexbox */
+    /* flex-direction: column;  Stack children vertically */
+  /* } */
+
+/* .card-body { */
+/* flex: 1;  Make card body grow to fill available space */
+/* } */
+
+.card.custom-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+.card.custom-card .card-body {
+flex: 1;
+display: flex;
+flex-direction: column;
+}
+
+.card.custom-card .card-text {
+flex: 0;
+}
+
+.card.custom-card .card-img-top {
+/* width: 100%;
+height: auto;
+flex: 0; */
+
+width: 100%; 
+height: 250px; 
+object-fit: cover;
+} 
+  
+
+.feature-img {
+    width:40%;
+    height: 100%;
+    border-radius: 50%; /* If you want a circular photo */
+    opacity: 0.8;
+}
+
+.container2{
+    width: 1300px;
+    height: 400px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 10% auto;
+    background-color: #000000;
+    /* Aligning the contents of the container (the divs) */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: aliceblue;
+    /* Vertical */
+    align-items: center;
+    /* align-content:  ; */
+
+}
+
+.container-first{
+    background-color: #000000;
+}
+
+
+.contact-container {
+    margin: 100px auto;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+
+}
+.contact-container h2{
+    padding-top: 10px;
+    font-weight: 230;
+}
+
+.icons {
+    margin: 40px auto;
+    font-size: 80px;  /* Adjust size as needed */
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px; /* Optionally adjust the button size */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.card.project{
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.card.project .card-img-top{
+    /* width: 100%;  */
+    /* height: 400px;  */
+    /* object-fit: cover; */
+
+}
+
