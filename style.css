@@ -226,7 +226,7 @@ object-fit: cover;
     width:50%;
     height: 100%;
     border-radius: 50%; /* If you want a circular photo */
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .container2{
