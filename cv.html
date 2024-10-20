@@ -24,20 +24,18 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <!-- <img src="{% static 'images/ak.png' %}" alt="Logo" class="d-inline-block align-text-top"> -->
             </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <i class="fas fa-bars" style="color:blueviolet; font-size:28px;"></i> -->
-            <i class="fas fa-bars fa-lg" style="color: #7c1c97;"></i>
+            <i class="fas fa-bars fa-lg"></i>
         </button>
         
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Me</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="cv.html">Education</a>
+                    <a class="nav-link active" aria-current="page" href="cv.html">Work - Education</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="projects.html">Projects</a>
@@ -51,120 +49,113 @@
         </div>
     </nav>
 <main>
-    <div class="container">
-        <div class="section-container">
-            <h4 class="section-title text-center">EDUCATION</h4>    
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card custom-card">
-                        <img src="images/ds.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Master of Science in Data Science</h5>
-                        <p class="card-text"><strong>King's College London</strong>, <br> London, UK, <br> Department of Informatics, <br> SEP 2022 - SEP 2023</p>
-                        </div>
+
+    <div class="container my-5">
+        <div class="section-container text-center">
+            <h2 class="section-title mb-4">WORK EXPERIENCE</h2>
+            <div class="col">
+                <div class="card h-100 custom-card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Developer</h5>
+                        <p class="card-text">
+                            <strong>Mercator Digital</strong><br> 
+                            London, UK<br> 
+                            <!-- Department of Informatics<br>  -->
+                            <small>MAR 2024 - PRESENT</small>
+                        </p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card custom-card">
-                        <img src="images/cs.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Bachelor of Science in Computer Science</h5>
-                        <p class="card-text"> <strong>Cardiff University</strong>, <br> Cardiff, UK, <br> Department of Informatics, <br> SEP 2019 - JUL 2022</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card custom-card">
-                        <img src="images/av.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">EASA Private Pilot License</h5>
-                        <p class="card-text"><strong>Aviator Flight Center</strong>, <br> Larnaka, CY, <br> General Aviation, <br> JUN 2020 - MAR 2021</p>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        <h4 class="section-title text-center pt-5">TECHNICAL SKILLS</h4>
-        <div class="skills-section">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h5 class="skills-subtitle">Programming Languages</h5>
-                        <div class="skills-container">
-                            <p>Python</p>
-                            <div class="skl-container">
-                                <div class="skills python">80%</div>
-                            </div>
-                            
-                            <p>Java</p>
-                            <div class="skl-container">
-                                <div class="skills java">70%</div>
-                            </div>
-
-                            <p>HTML</p>
-                            <div class="skl-container">
-                                <div class="skills html">90%</div>
-                            </div>
-                            
-                            <p>CSS</p>
-                            <div class="skl-container">
-                                <div class="skills css">80%</div>
-                            </div>
-                            
-                            <p>JavaScript</p>
-                            <div class="skl-container">
-                                <div class="skills js">50%</div>
-                            </div>
-
-                            <p>MATLAB</p>
-                            <div class="skl-container">
-                                <div class="skills matlab">60%</div>
-                            </div>
-
-                            <p>R</p>
-                            <div class="skl-container">
-                                <div class="skills r">60%</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="skills-container">
-                            <h5 class="skills-subtitle">Web Frameworks</h5>
-                            
-                            <p>Flask</p>
-                            <div class="skl-container">
-                                <div class="skills flask">75%</div>
-                            </div>
-                            
-                            <p>Django</p>
-                            <div class="skl-container">
-                                <div class="skills django">75%</div>
-                            </div>
-                    
-                            <p>Express JS</p>
-                            <div class="skl-container">
-                                <div class="skills express">50%</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="skills-container">
-                            <h5 class="skills-subtitle">Database Systems</h5>
-                    
-                            <p>SQL</p>
-                            <div class="skl-container">
-                                <div class="skills sql">80%</div>
-                            </div>
-                    
-                            <p>NoSQL</p>
-                            <div class="skl-container">
-                                <div class="skills nosql">60%</div>
-                            </div>
-                        </div> 
-                    </div>   
-                </div>  
             </div>
         </div>
     </div>
+
+    <div class="container my-5">
+        <div class="section-container text-center">
+            <h2 class="section-title mb-4">EDUCATION</h2>
+            <div class="col">
+                <div class="card h-100 custom-card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Master of Science in Data Science</h5>
+                        <p class="card-text">
+                            <strong>King's College London</strong><br> 
+                            London, UK<br> 
+                            Department of Informatics<br> 
+                            <small>SEP 2022 - SEP 2023</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 - Bachelor's in Computer Science -->
+            <div class="col">
+                <div class="card h-100 custom-card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Bachelor of Science in Computer Science</h5>
+                        <p class="card-text">
+                            <strong>Cardiff University</strong><br> 
+                            Cardiff, UK<br> 
+                            Department of Informatics<br> 
+                            <small>SEP 2019 - JUL 2022</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 - Private Pilot License -->
+            <div class="col">
+                <div class="card h-100 custom-card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">EASA Private Pilot License</h5>
+                        <p class="card-text">
+                            <strong>Aviator Flight Center</strong><br> 
+                            Larnaka, Cyprus<br> 
+                            General Aviation<br> 
+                            <small>JUN 2020 - MAR 2021</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h4 class="text-center pt-5">TECHNICAL SKILLS</h4>
+        <div class="skills-section text-center">
+                    <div class="skill">
+                        <h5>Programming Languages</h5>
+                        <div class="skills-badges">
+                            <span class="badge">Python</span>
+                            <span class="badge">Scala</span>
+                            <span class="badge">Java</span>
+                            <span class="badge">HTML</span>
+                            <span class="badge">CSS</span>
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">MATLAB</span>
+                            <span class="badge">R</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <h5>Web Frameworks</h5>
+                        <div class="skills-badges">
+                            <span class="badge">Django</span>
+                            <span class="badge">Play</span>
+                            <span class="badge">Flask</span>
+                            <span class="badge">Express JS</span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <h5>Database Systems</h5>
+                        <div class="skills-badges">
+                            <span class="badge">SQL</span>
+                            <span class="badge">NoSQL</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
 </main>
 <footer>
     <div class="footer">

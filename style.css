@@ -14,33 +14,17 @@ body {
 }
 
 main {
-    background-color: #000000;
-    color: #F5F5F5;
+    background-color: #F5F5F5;
+    color: #000000;
     flex-grow: 1;
-    /* padding-bottom: 30px; */
 }
-
-/* This changes the background color of the selected text */
-::selection {
-    background-color: blueviolet; /* This is an orange color */
-    color: #FFFFFF; /* This is white color for the text */
+.fas .fa-bars .fa-lg {
+    background-color: #312c4b;
 }
-
-/* For compatibility with some browsers like Firefox */
-::-moz-selection {
-    background-color: blueviolet;
-    color: #FFFFFF;
-}
-
 .footer {
     background-color: #5e5b5b;
-    /* #AC9B84 */
-    /* 33007F */
-    /* #33007F */
-    /* #440392 */
     color: #F5F5F5;
     text-align: center;
-    /* padding: 0.5px; */
     position: relative;
     bottom: 0;
     width: 100%;
@@ -62,12 +46,6 @@ main {
     color: #000000; 
 }
 
-
-/* Change the color of navbar links on hover */
-.navbar-nav .nav-link:hover {
-    color:blueviolet; 
-}
-
 /* Change the color of dropdown items */
 .dropdown-item {
     color: #000000; 
@@ -83,24 +61,26 @@ main {
     border: none;
 }
 
-/* Change the background color of the navbar toggler button */
-/* .navbar-toggler {
-    background-color: #FF5733;
-} */
-
-
-.aboutme-container{
+.aboutme-container {
     background-color: #F5F5F5;
     color: #000000;
-    /* margin-bottom: 100px; */
-    margin: 100px auto;
+    margin: 0 auto; /* Center the container */
     padding: 10px 5px 30px; /* Added padding for better appearance */
     border-radius: 15px;
     max-width: 1100px;
-    /* width: 1000px; */
-    /* display: flex;
-    justify-content: center;  /* Center horizontally */
-    /* align-items: center;  */
+    width: 100%; /* Ensure it takes full width of parent container */
+    display: flex;
+    justify-content: center; /* Center the content inside */
+}
+
+.aboutme-container .row {
+    width: 100%; /* Ensure row takes full width */
+    display: flex;
+    justify-content: center; /* Center the content inside the row */
+}
+
+.col-lg-8 {
+    max-width: 800px; /* Optional: Define a max-width for the column */
 }
 
 .section-container{
@@ -109,24 +89,35 @@ main {
     padding: 20px; */
 }
 
-.skills-section{
+.skills-section {
     max-width: 1400px;
     margin: auto;
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
 }
 
 
 .skills-container {
     width: 100%;
-    max-width: 350px;
-    margin: auto;
+    max-width: 500px;
     margin-bottom: 30px;
-  }
+    text-align: center;
+}
+
+.skills-badges {
+    display: flex;
+    flex-wrap: wrap; /* Allow badges to wrap */
+    justify-content: center;
+    gap: 10px; /* Add space between badges */
+}
 
 .section-title {
     font-size: 24px;
     font-weight:400;
     margin: 30px;
     text-align: center;
+    color:#000000;
 }
 
 .skills-subtitle {
@@ -139,16 +130,15 @@ main {
     word-wrap: break-word;
 }
 
+.skill {
+    margin: 2%;
+}
 
 .skl-container{
     width: 100%; /* Full width */
     background-color: #ddd; /*Grey background */
     margin-bottom: 2%;
 }
-
-
-/* Make sure that padding behaves as expected
-* {box-sizing:border-box} */
 
 .skills {
   text-align: right; /* Right-align text */
@@ -158,66 +148,38 @@ main {
   color: white; /* White text color */
 }
 
-.python {width: 80%; background-color: #2C666E;} /* Blue */
-.java {width: 70%; background-color: #2C666E;} /* Brown */
-.html {width: 90%; background-color: #2C666E;} /* Orange */
-.css {width: 80%; background-color: #2C666E;} /* Purple */
-.js {width: 50%; background-color: #2C666E;} /* Yellow */
-.matlab {width: 60%; background-color: #2C666E;} /* Orange-Red */
-.r {width: 60%; background-color: #2C666E;} /* Blue */
-.flask {width: 75%; background-color: #36454F;} /* Teal */
-.django {width: 75%; background-color: #36454F;} /* Dark Green */
-.express {width: 50%; background-color: #36454F;} /* Green */
-.sql {width: 80%; background-color: #B8860B;} 
-.nosql {width: 60%; background-color: #B8860B;} 
-
-
-/* .custom-card .card-body {
-    padding: 15px; /* Adjust the padding as needed */
-    /* background-color: #F5F5F5; */
-  /* } */
-
-/* .custom-card .card-img-top {
-    width: 100%;  /* Make image fill the container */
-    /* height: 200px;  /* Set a fixed height */
-    /* object-fit: cover;  /* Cover the area without distorting aspect ratio */
-/* }  */
-
-/* .custom-card {
-    display: flex;  /* Enable flexbox */
-    /* flex-direction: column;  Stack children vertically */
-  /* } */
-
-/* .card-body { */
-/* flex: 1;  Make card body grow to fill available space */
-/* } */
 
 .card.custom-card {
+    background-color: #312c4b;
+    color: #F5F5F5 ;
     display: flex;
     flex-direction: column;
     height: 100%;
     text-align: left;
+    padding: 15px; 
+    max-width: 80%; 
+    margin: 0 auto; 
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 992px) {
+    .card.custom-card {
+        max-width: 50%; /* Change to 50% for screens larger than 992px */
+    }
+}
+  
+  .card.custom-card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds space between elements inside the card-body */
   }
   
-.card.custom-card .card-body {
-flex: 1;
-display: flex;
-flex-direction: column;
-}
+  .card.custom-card .card-text {
+    flex: 0;
+    margin-bottom: 10px; /* Adds margin between different card-text elements */
+  }
 
-.card.custom-card .card-text {
-flex: 0;
-}
-
-.card.custom-card .card-img-top {
-/* width: 100%;
-height: auto;
-flex: 0; */
-
-width: 100%; 
-height: 250px; 
-object-fit: cover;
-} 
 .feature-box {
     text-align: left;
 }
@@ -227,6 +189,7 @@ object-fit: cover;
     height: 100%;
     border-radius: 50%; /* If you want a circular photo */
     opacity: 0.9;
+    border: 5px solid #000000;
 }
 
 .container2{
@@ -249,12 +212,14 @@ object-fit: cover;
 }
 
 .container-first{
-    background-color: #000000;
+    color: #000000;
+    background-color: #F5F5F5;
+    margin-bottom: 5%;
 }
 
 
 .contact-container {
-    margin: 100px auto;
+    margin: 80px auto;
     text-align: center;
     align-items: center;
     padding: 10px;
@@ -262,7 +227,8 @@ object-fit: cover;
 }
 .contact-container h2{
     padding-top: 10px;
-    font-weight: 230;
+    font-size: 24px;
+    font-weight:400;
 }
 
 .icons {
@@ -285,7 +251,11 @@ button:hover {
 .card.project{
     margin: 0 auto;
     max-width: 600px;
+    background-color: #312c4b;
+    color: #F5F5F5;
 }
 
-
+.badge {
+    background-color: #312c4b;
+}
 
